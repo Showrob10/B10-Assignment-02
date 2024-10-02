@@ -203,9 +203,12 @@ main{
 }
 
 .bmi-frame{
-    width: 100%;
+    width: 1440px;
     height: 500px;
+    margin-bottom: 80px;
+    /* margin-right: 400px; */
     background:rgb(34, 34, 34);
+    border: 1px solid red;
 }
 
 table, tr, td, th{
@@ -214,6 +217,7 @@ table, tr, td, th{
     padding: 10px;
     min-width: 200px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    /* padding-left: 30px; */
 }
 
 tr th{
@@ -225,6 +229,58 @@ tr th{
     font-size: 1em;
     color: var(--grey-color);
 }
+
+.bmi-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator-container{
+    max-width: 40%;
+    margin: 0 auto ;
+}
+
+.input-field{
+    gap: 10px;
+}
+
+input{
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+#gender, #activity, #Age, #Weight, #Height{
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    color: rgb(203, 209, 214);
+}
+
+.in-1, .in-2{
+    display: flex;
+}
+
+#Weight, #Height, #Age , #gender{
+    width: 45%;
+}
+
+#gender{
+    width: 56%;
+}
+
+#activity{
+    width: 98%;
+}
+
+/* section-TEAM-starts-here */
 
 
 
