@@ -193,9 +193,9 @@ main{
 
 /* BMI-Calculator-starts-here */
 
-.bmi-calculator{
+/* .bmi-calculator{
     min-height: 700px;
-}
+} */
 
 .bmi-heading{
     max-width: 50%;
@@ -282,6 +282,40 @@ input{
 
 /* section-TEAM-starts-here */
 
+.meet-heading{
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px ;
+}
+
+
+.team-container{
+    /* border: 2px solid red; */
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.img-container{
+    width: 326px;
+    height: 272px; 
+    border-radius: 18px;
+    margin: 20px auto;
+    /* border: 2px solid rgb(255, 242, 0); */
+}
+
+.img-container> img{
+    /* border: 1px solid aquamarine; */
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -365,6 +399,28 @@ input{
         text-align: center;
         align-items: center;
         margin-bottom: 30px;
+    }
+
+    .bmi-frame{
+        flex-direction: column;
+    }
+
+    .bmi-frame{
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        border: 1px solid red;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .bmi-heading{
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .calculator-container{
+        max-width: 90%;
     }
 
 
