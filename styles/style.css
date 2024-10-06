@@ -35,7 +35,7 @@ body{
     /* border: 2px solid red; */
     margin: 0 auto;
     /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
 
@@ -59,6 +59,7 @@ body{
 .logo{
     font-weight: 800;
     font-size: 2.25rem;
+    font-style: italic;
     color: rgb(230, 83, 60);
 }
 
@@ -282,11 +283,15 @@ input{
 
 /* section-TEAM-starts-here */
 
+.meet-section{
+    margin-bottom: 80px;
+}
+
 .meet-heading{
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
-    margin-bottom: 30px ;
+    margin-bottom: 60px ;
 }
 
 
@@ -295,27 +300,86 @@ input{
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    gap: 10px;
 }
 
 .img-container{
-    width: 326px;
-    height: 272px; 
+    width: 390px;
+    height: 90%;
     border-radius: 18px;
-    margin: 20px auto;
-    /* border: 2px solid rgb(255, 242, 0); */
+    margin: 10px auto;
 }
 
 .img-container> img{
-    /* border: 1px solid aquamarine; */
     border-radius: 18px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(.8);
 }
+
+.team-card-container{
+    position: relative;
+}
+
+.trainer-name{
+    position: absolute;
+    bottom: 10%;
+    line-height: 40%;
+    margin-left: 20px;
+}
+
+/* Footer-section-stars-here */
+
+footer{
+    max-width: 1440px;
+    background: rgba(255, 255, 255, 0.1);
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.footer-content{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.footer-logo{
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.fitness-area{
+    width: 40%;
+}
+
+.get-started-area{
+    width: 40%;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: var(--grey-color);
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.right{
+    width: 20%;
+    margin: 0 auto;
+    color: var(--grey-color);
+}
+
+
 
 
 
@@ -422,6 +486,59 @@ input{
     .calculator-container{
         max-width: 90%;
     }
+
+    .bmi-calculator{
+        margin-bottom: 20px;
+    }
+
+    /* Team-section-starts-here */
+
+    .team-container{
+        /* border: 2px solid red; */
+        grid-template-columns: 1fr;
+    }
+
+    .img-container{
+        height: 350px;
+        width: 450px;
+        /* border: 2px solid red; */
+    }
+
+    .footer-content{
+        flex-direction: column;
+        padding-top: 20px;
+
+    }
+
+    .fitness-area{
+        width: 75%;
+        margin-top: 10px;
+        text-align: left;
+        margin-right: 20%;
+    }
+
+    .get-started-area{
+        width: 95%;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 30px;
+    }
+
+    hr{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .right{
+        width: 90%;
+        text-align: center;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+   
+
+
 
 
 
