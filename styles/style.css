@@ -87,6 +87,46 @@ body{
     margin: 100px;
 }
 
+.builder-img-container{
+    position: relative;
+}
+
+
+.floating-card{
+    width: 193px;
+    height: 98px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+
+    position: absolute;
+    top: 200px;
+    right: 90px;
+}
+
+.floating-card-2{
+    top: 500px;
+    right:420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ellipse {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(230, 83, 60);;
+    border-radius: 50%;
+}
+
+.floating-header{
+    line-height: .1;
+}
+
+
+
 .main-container{
     display: flex;
     justify-content: space-between;
@@ -206,10 +246,21 @@ main{
 .bmi-frame{
     width: 1440px;
     height: 500px;
+    margin-top: 60px;
     margin-bottom: 80px;
     /* margin-right: 400px; */
     background:rgb(34, 34, 34);
-    border: 1px solid red;
+}
+
+.bmi-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.table-container{
+    margin-left: 100px;
 }
 
 table, tr, td, th{
@@ -229,12 +280,6 @@ tr th{
 .tr, td{
     font-size: 1em;
     color: var(--grey-color);
-}
-
-.bmi-frame{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .calculator-container{
@@ -280,6 +325,56 @@ input{
 #activity{
     width: 98%;
 }
+
+
+/* section-new-starts-here */
+
+.new-addition{
+    width: 100%;
+}
+
+.new-heading{
+    text-align: center;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+    max-width: 250px;
+    padding-bottom: 30px;
+}
+
+.send-message-container{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#send-message{
+    width: 70%;
+    height: 32px;
+}
+
+.btn{
+    max-width: fit-content;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
 
 /* section-TEAM-starts-here */
 
@@ -396,7 +491,6 @@ hr{
 
 
 
-
 @media (max-width: 576px){
 
    header, main, footer{
@@ -409,7 +503,7 @@ hr{
     }
 
     .ham-burger{
-        display: contents;
+        display: block;
     }
 
     .main-container{
@@ -430,6 +524,18 @@ hr{
     .D1{
         width: 70%;
         margin-top: 28px;
+    }
+
+    .floating-card{
+        /* width: 193px;
+        height: 98px; */
+        top: 580px;
+        right: 80px;
+    }
+    
+    .floating-card-2{
+        top: 800px;
+        right:300px;
     }
 
     /* section-habits-starts-here */
@@ -489,6 +595,42 @@ hr{
 
     .bmi-calculator{
         margin-bottom: 20px;
+    }
+
+    /* new-section-stars-here */
+
+
+
+    .card-container{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .card{
+        padding: 10px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .new-addition{
+        margin-top: 30px;
+    }
+
+    .new-heading{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .send-message-container{
+        width: 100%;
+        margin-left: 32px;
+
+    }
+    
+    #send-message{
+        width: 50%;
     }
 
     /* Team-section-starts-here */
