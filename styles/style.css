@@ -548,6 +548,8 @@ hr{
     }
 
     .habit-main-image-container{
+        width: 60%;
+        margin: 0 auto;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 100px;
